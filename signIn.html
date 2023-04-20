@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="imgCont">
+            <button onclick="show()">Generate Image</button>
+        </div><hr>
+        <section id="content">
+
+        </section>
+    </div>
+    <script>
+        let section = document.getElementById('content');
+        // section.innerHTML = `<form method='post' action='#'>
+        //       <input type='text' placeholder='enter your name'>
+        //     </form>`
+        //     console.log(section)
+        // let form = document.createElement('form');
+        // form.setAttribute('method', 'post');
+        // form.setAttribute('action', '#');
+        // let div = document.createElement('div');
+        // let fInput = document.createElement('input'); 
+        // fInput.setAttribute('type', 'text');
+        // fInput.setAttribute('placeholder', 'enter your firstname')
+        // let pInput = document.createElement('input'); 
+        // pInput.setAttribute('type', 'password');
+        // pInput.setAttribute('placeholder', 'enter your password');
+        // let submit = document.createElement('button');
+        // submit.setAttribute('type', 'submit');
+        // submit.textContent = 'submit';
+        // form.appendChild(fInput);
+        // form.appendChild(pInput)
+        // form.appendChild(submit)
+        // section.appendChild(form)
+        // console.log(form);
+        // var div = document.createElement('div');
+        // var p = document.createElement('p');
+        // p.textContent = 'hello word';
+        // p.classList.add('text_color');
+        // let mend = div.appendChild(p);
+        // div.setAttribute('id', 'article');
+        // section.appendChild(div);
+        // console.log(section)
+        function show(){
+            let imgCont = document.getElementById('imgCont')
+            let img = document.createElement('img');
+            img.src = 'book.jpg';
+            // imgCont.classList.add('javClass');
+            imgCont.style.border = '.2rem solid green';
+            imgCont.style.width = '50%';
+            imgCont.appendChild(img);
+            console.log(img);
+        }
+    </script>
+</body>
+</html>
